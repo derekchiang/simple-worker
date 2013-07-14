@@ -12,7 +12,7 @@
     func = options['func']
 
     if (!isFunction(func)) {
-      throw '`func` needs to be a function.'
+      throw new Error('`func` needs to be a function.')
     }
 
     args = options['args']
