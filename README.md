@@ -10,6 +10,8 @@ Simply put, web workers are a HTML5 standard that allow you to run computational
 
 ## Usage
 
+Include the script first, of course.
+
 To run a function once:
 
 ```javascript
@@ -97,6 +99,10 @@ var fiboWorker = new SimpleWorker({
 fiboWorker.run(123);
 fiboWorker.run(456);
 ```
+
+## Run demo
+
+Simple open up `demo/index.html` in your browser.
 
 ## Know Restrictions
 
