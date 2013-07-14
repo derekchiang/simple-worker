@@ -50,6 +50,9 @@ var worker = new SimpleWorker({
 // Run however many times your want
 worker.run(123456)
 worker.run(999999)
+
+// Close the worker when you don't need it anymore
+worker.close()
 ```
 
 ## A Complete Example
@@ -100,12 +103,23 @@ fiboWorker.run(123);
 fiboWorker.run(456);
 ```
 
-## Run demo
+## Run Demo
 
-Simple open up `demo/index.html` in your browser.
+Simple open up `demo/client/index.html` in your browser.
+
+Or, if you prefer to run it via a server:
+
+1. CD into `demo/`
+2. `npm install`
+3. `node server.js`
+4. Go to localhost:8000
 
 ## Know Restrictions
+
+The following restrictions apply to the function that you give to `SimpleWorker` to run:
 
 1. Closures won't work.  Web workers have to be run in their own isolated environments; therefore you need to make sure your function does not make use of anything outside of its body.
 
 2. Simicolons are not optional.  You need to make sure you use simicolons to separate statements in your function; otherwise weird bugs might occur.
+
+And of course, `simple-worker` only works in browsers that support web workers.  Check out the table at [this page](https://developer.mozilla.org/en-US/docs/Web/Guide/Performance/Using_web_workers) for the list of browsers.
