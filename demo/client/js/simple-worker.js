@@ -33,8 +33,6 @@
     funcString = 'data:text/javascript;charset=US-ASCII,var __func = ' + func.toString() + ';'
     funcString += '(' + setupOnMessage.toString() + ').call(this);'
 
-    console.log(funcString)
-
     var worker = new Worker(funcString)
 
     worker.onmessage = function(e) {
