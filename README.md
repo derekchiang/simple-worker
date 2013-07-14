@@ -50,6 +50,9 @@ var worker = new SimpleWorker({
 // Run however many times your want
 worker.run(123456)
 worker.run(999999)
+
+// Close the worker when you don't need it anymore
+worker.close()
 ```
 
 ## A Complete Example
