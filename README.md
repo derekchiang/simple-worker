@@ -102,7 +102,14 @@ fiboWorker.run(456);
 
 ## Run demo
 
-Simple open up `demo/index.html` in your browser.
+Simple open up `demo/client/index.html` in your browser.
+
+Or, if you prefer to run it via a server:
+
+1. CD into `demo/`
+2. `npm install`
+3. `node server.js`
+4. Go to localhost:8000
 
 ## Know Restrictions
 
