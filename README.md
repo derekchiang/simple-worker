@@ -100,7 +100,7 @@ fiboWorker.run(123);
 fiboWorker.run(456);
 ```
 
-## Run demo
+## Run Demo
 
 Simple open up `demo/client/index.html` in your browser.
 
