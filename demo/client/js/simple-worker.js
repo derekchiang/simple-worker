@@ -60,6 +60,6 @@
 
   this.SimpleWorker.run = function(options) {
     options['runOnce'] = true
-    var worker = new SimpleWorker(options)
+    new SimpleWorker(options)
   }
 }).call(this)

@@ -39,6 +39,7 @@
     }
   })
 
+  var i = 0
   $('#run').click(function() {
     fiboWorker.run($('input').val())
   })
