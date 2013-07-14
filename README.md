@@ -97,3 +97,9 @@ var fiboWorker = new SimpleWorker({
 fiboWorker.run(123);
 fiboWorker.run(456);
 ```
+
+## Know Restrictions
+
+1. Closures won't work.  Web workers have to be run in their own isolated environments; therefore you need to make sure your function does not make use of anything outside of its body.
+
+2. Simicolons are not optional.  You need to make sure you use simicolons to separate statements in your function; otherwise weird bugs might occur.
