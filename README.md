@@ -123,3 +123,7 @@ The following restrictions apply to the function that you give to `SimpleWorker`
 2. Simicolons are not optional.  You need to make sure you use simicolons to separate statements in your function; otherwise weird bugs might occur.
 
 And of course, `simple-worker` only works in browsers that support web workers.  Check out the table at [this page](https://developer.mozilla.org/en-US/docs/Web/Guide/Performance/Using_web_workers) for the list of browsers.
+
+## License
+
+[WTFPL](http://www.wtfpl.net/about/).
