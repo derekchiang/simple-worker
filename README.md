@@ -105,7 +105,7 @@ fiboWorker.run(456);
 
 ## Run Demo
 
-Simple open up `demo/client/index.html` in your browser.
+Simply open up `demo/client/index.html` in your browser.
 
 Or, if you prefer to run it via a server:
 
